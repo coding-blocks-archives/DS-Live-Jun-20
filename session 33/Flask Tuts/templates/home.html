@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to My website</title>
+</head>
+<body>
+
+		<h1>  <center>Welcome to my website</center> </h1>
+
+		<h2> How are you doing? </h2>
+
+		<img src="{{dog_url}}"  height="500px" width="500px" />
+
+
+	
+
+		<h1> My Friends </h1>
+
+		<ul>	
+		{% for k,v in my_friends.items() %} 
+
+			<li> <h3>	{{k}} - {{v}}  </h3></li>
+
+		{% endfor %}
+		</ul>
+
+
+
+		{% if my_age <22%}
+			<h1> My age is {{my_age}} </h1>
+		{%else%}
+			<h1> My age is 21 </h1>
+		
+		{% endif %}
+	
+
+
+<marquee><h1><u>INPUT FORMS</u></h1></marquee>
+
+<!-- 
+<form method="GET" action="/submit">
+	<b>Name : </b> <input type="text" name="my_name" placeholder=" Input Your Name"/>
+	<input type="submit">
+</form>
+ -->
+
+
+<form action="/submit" method="post">
+  Your Name : <input type="text" name="my_name", placeholder="Enter your name"></input>
+  <input type="submit" value="submit"></input>
+</form>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</body>
+</html>
