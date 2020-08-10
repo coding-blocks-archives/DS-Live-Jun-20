@@ -1,0 +1,26 @@
+
+descriptions => dictionary of mapping between image_name and list of all captions it has
+
+vocabulary => set all unique words 8424
+
+all_vocab => list of all unique words having frequency > 10 => 1845
+
+train => list of img_names for training purpose
+test => list of img_names for testining purpose
+
+train_descriptions => mapping between image_name and list of all captions for training sample + (startseq, endseq)
+
+
+encoding_train => mapping of file_name with 2048 features extracted from ResNet for training samples
+encoding_test => mapping of file_name with 2048 features extracted from ResNet50 for testing samples
+
+
+
+word_to_idx  => is mapping between each unique word in all_vocab to int value
+idx_to_word  => is vice-versa
+
+vocab_size => len(idx_to_word) + 1  (1848)
+
+max_len => max length that any sentence can have.. 35
+
+embedding_output => it is a matrix having shape (vocab_size,50)
